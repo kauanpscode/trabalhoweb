@@ -1,0 +1,109 @@
+        /* Reseta estilos padrão */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          background-color: #f4f4f4;
+          color: #333333;
+        }
+
+        header {
+          background-color: #172658;
+          color: white;
+          padding: 20px 0;
+          text-align: center;
+        }
+
+        header h1 {
+          font-size: 1.5em;
+          margin-bottom: 10px;
+        }
+
+        nav ul {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+        }
+
+        nav ul li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative;
+        }
+
+        nav ul li a {
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          position: relative;
+          padding-bottom: 5px;
+        }
+
+        nav ul li a::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          width: 0;
+          bottom: 0;
+          left: 0;
+          background-color: #3498db;
+          transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+          width: 100%;
+        }
+
+        section {
+          padding: 20px;
+          margin: 20px;
+          background-color: white;
+          border-radius: 5px;
+        }
+
+        #portfolio {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+
+        .project {
+          flex-basis: 30%;
+          background-color: #eaeaea;
+          margin: 10px 0;
+          padding: 15px;
+          border-radius: 5px;
+        }
+
+        .contato {
+          margin-left: 20px;
+        }
+
+        footer {
+          font-size: 0.7em;
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 5px 0;
+          position: fixed;
+          width: 100%;
+          bottom: 0;
+        }
+
+        .formacao {
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+
+        .formacao h3 {
+          margin-top: 10px;
+        }
